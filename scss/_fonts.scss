@@ -1,0 +1,86 @@
+@import url("https://fonts.cdnfonts.com/css/circe");
+
+$main_red_color: #ec1b2e;
+$main_text_color: #333333;
+
+* {
+	font-family: Circe;
+	color: $main_text_color;
+}
+
+.small-btn {
+	color: #fff;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.school-name {
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 140%;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+
+#header {
+	#nav-top {
+		.school-name {
+			color: $main_red_color;
+		}
+	}
+}
+
+.contacts {
+	.contact {
+		&-caption {
+			color: $main_text_color;
+			font-family: "Circe";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 140%;
+		}
+	}
+}
+
+#nav-bottom {
+	.nav-list {
+		.nav-item {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 140%;
+			letter-spacing: 0.02em;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.footer {
+	&-item {
+		p {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 140%;
+		}
+
+		ul > li > a {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 140%;
+		}
+	}
+
+	&-copyright {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 140%;
+		opacity: 0.5;
+	}
+}

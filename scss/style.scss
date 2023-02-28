@@ -1,0 +1,191 @@
+@import "_fonts";
+@import "_global";
+@import "_reset";
+@import "_libs";
+@import "_vars";
+
+$main_red_color: #ec1b2e;
+$main_text_color: #333333;
+
+.small-btn {
+	width: 143px;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background: $main_red_color;
+	border: none;
+	cursor: pointer;
+}
+
+.school-name {
+	width: 100%;
+}
+
+#header {
+	height: 140px;
+	margin: 20px 0;
+
+	hr {
+		margin: 20px 0;
+	}
+}
+
+hr {
+	opacity: 0.3;
+}
+
+#nav-top {
+	display: flex;
+	justify-content: space-between;
+
+	.school-name {
+		max-width: 217px;
+		padding-right: 130px;
+		box-sizing: content-box;
+	}
+
+	.contacts {
+		padding-right: 130px;
+		margin: 0 auto;
+
+		.contact {
+			padding-right: 45px;
+		}
+
+		.contact + .contact + .contact {
+			padding-right: 67px;
+		}
+	}
+}
+
+.contacts {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.contact {
+		display: flex;
+		align-items: center;
+
+		&-logo {
+			padding-right: 20px;
+		}
+	}
+}
+
+#nav-bottom {
+	display: flex;
+	justify-content: space-between;
+
+	.nav-list {
+		display: flex;
+		align-items: center;
+		margin-right: -20px;
+
+		.nav-item {
+			padding-right: 20px;
+			height: 20px;
+		}
+	}
+}
+
+.footer {
+	background: rgba(51, 51, 51, 0.05);
+	hr {
+		margin: 0;
+	}
+
+	.footer-content {
+		padding: 60px 0 45px;
+		display: grid;
+		grid-template-columns: 221px repeat(4, 1fr);
+		grid-template-rows: 143px auto;
+		column-gap: 69px;
+		row-gap: 40px;
+		grid-template-areas:
+			"contacts about-us schedule exam school"
+			"contacts about-us studying exam school";
+
+		.footer-item {
+			h3 {
+				padding-bottom: 25px;
+			}
+
+			ul {
+				list-style: none;
+				padding: 0;
+
+				li {
+					padding-bottom: 15px;
+				}
+			}
+		}
+
+		.footer-item:nth-of-type(1) {
+			grid-area: contacts;
+			.contacts {
+				display: inline-flex;
+				flex-direction: column;
+				align-items: flex-start;
+				padding-bottom: 22px;
+
+				a {
+					padding-bottom: 20px;
+				}
+			}
+		}
+
+		.footer-item:nth-of-type(2) {
+			grid-area: about-us;
+		}
+
+		.footer-item:nth-of-type(3) {
+			grid-area: schedule;
+		}
+
+		.footer-item:nth-of-type(4) {
+			grid-area: studying;
+		}
+
+		.footer-item:nth-of-type(5) {
+			grid-area: exam;
+		}
+
+		.footer-item:nth-of-type(6) {
+			grid-area: school;
+		}
+	}
+
+	&-copyright {
+		display: flex;
+		justify-content: space-between;
+		padding: 25px 0;
+	}
+}
+
+.social {
+	&-block {
+		text-align: center;
+
+		a {
+			padding-bottom: 0;
+		}
+	}
+}
+
+#first-footer-item {
+	max-width: 221px;
+	width: 100%;
+
+	.school-name {
+		padding-bottom: 40px;
+	}
+}
+
+svg:hover {
+	path {
+		fill: $main_red_color;
+	}
+}

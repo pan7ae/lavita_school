@@ -1,0 +1,290 @@
+@import url("https://fonts.cdnfonts.com/css/circe");
+* {
+  font-family: Circe;
+  color: #333333;
+}
+
+.small-btn {
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.school-name {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+#header #nav-top .school-name {
+  color: #ec1b2e;
+}
+
+.contacts .contact-caption {
+  color: #333333;
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+#nav-bottom .nav-list .nav-item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.footer-item p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+}
+.footer-item ul > li > a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+.footer-copyright {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  opacity: 0.5;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.small-btn {
+  width: 143px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #ec1b2e;
+  border: none;
+  cursor: pointer;
+}
+
+.school-name {
+  width: 100%;
+}
+
+#header {
+  height: 140px;
+  margin: 20px 0;
+}
+#header hr {
+  margin: 20px 0;
+}
+
+hr {
+  opacity: 0.3;
+}
+
+#nav-top {
+  display: flex;
+  justify-content: space-between;
+}
+#nav-top .school-name {
+  max-width: 217px;
+  padding-right: 130px;
+  box-sizing: content-box;
+}
+#nav-top .contacts {
+  padding-right: 130px;
+  margin: 0 auto;
+}
+#nav-top .contacts .contact {
+  padding-right: 45px;
+}
+#nav-top .contacts .contact + .contact + .contact {
+  padding-right: 67px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts .contact {
+  display: flex;
+  align-items: center;
+}
+.contacts .contact-logo {
+  padding-right: 20px;
+}
+
+#nav-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+#nav-bottom .nav-list {
+  display: flex;
+  align-items: center;
+  margin-right: -20px;
+}
+#nav-bottom .nav-list .nav-item {
+  padding-right: 20px;
+  height: 20px;
+}
+
+.footer {
+  background: rgba(51, 51, 51, 0.05);
+}
+.footer hr {
+  margin: 0;
+}
+.footer .footer-content {
+  padding: 60px 0 45px;
+  display: grid;
+  grid-template-columns: 221px repeat(4, 1fr);
+  grid-template-rows: 143px auto;
+  -moz-column-gap: 69px;
+       column-gap: 69px;
+  row-gap: 40px;
+  grid-template-areas: "contacts about-us schedule exam school" "contacts about-us studying exam school";
+}
+.footer .footer-content .footer-item h3 {
+  padding-bottom: 25px;
+}
+.footer .footer-content .footer-item ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-content .footer-item ul li {
+  padding-bottom: 15px;
+}
+.footer .footer-content .footer-item:nth-of-type(1) {
+  grid-area: contacts;
+}
+.footer .footer-content .footer-item:nth-of-type(1) .contacts {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 22px;
+}
+.footer .footer-content .footer-item:nth-of-type(1) .contacts a {
+  padding-bottom: 20px;
+}
+.footer .footer-content .footer-item:nth-of-type(2) {
+  grid-area: about-us;
+}
+.footer .footer-content .footer-item:nth-of-type(3) {
+  grid-area: schedule;
+}
+.footer .footer-content .footer-item:nth-of-type(4) {
+  grid-area: studying;
+}
+.footer .footer-content .footer-item:nth-of-type(5) {
+  grid-area: exam;
+}
+.footer .footer-content .footer-item:nth-of-type(6) {
+  grid-area: school;
+}
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.social-block {
+  text-align: center;
+}
+.social-block a {
+  padding-bottom: 0;
+}
+
+#first-footer-item {
+  max-width: 221px;
+  width: 100%;
+}
+#first-footer-item .school-name {
+  padding-bottom: 40px;
+}
+
+svg:hover path {
+  fill: #ec1b2e;
+}
